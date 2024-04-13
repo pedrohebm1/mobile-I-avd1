@@ -42,10 +42,10 @@ export function Home() {
 
   function handleAddNewUser() {
     if (
-      invoice.trim() === "" &&
-      codTax.trim() === "" &&
-      invoiceValue.trim() === "" &&
-      state.trim() === "" &&
+      invoice.trim() === "" ||
+      codTax.trim() === "" ||
+      invoiceValue.trim() === "" ||
+      state.trim() === "" ||
       supplier.trim() === ""
     ) {
       return Alert.alert("Usuário", "Favor preencha os campos");
